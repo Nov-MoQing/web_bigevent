@@ -47,8 +47,8 @@ function getUserInfo() {
 
 // 渲染用户头像，解构了
 function renderAvatar({ username, nickname, user_pic }) {
-  // 获取用户的昵称，用户名 或者 昵称
-  const name = username || nickname
+  // 获取用户的昵称，昵称 或者 用户名
+  const name = nickname || username
   // 设置欢迎的文本
   $('#welcome').html(`欢迎&nbsp&nbsp${name}`)
   // 判断如果图片不为空，就渲染图片并显示
